@@ -1,0 +1,45 @@
+{
+  "name": "react-start-kit",
+  "version": "0.1.0",
+  "description": "The start project of React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --progress --profile --colors --config ./webpack/webpack.release.config.js",
+    "watch": "webpack -w --config ./webpack/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Means88/react-start-kit.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "means88",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Means88/react-start-kit/issues"
+  },
+  "homepage": "https://github.com/Means88/react-start-kit#readme",
+  "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.1",
+    "redux": "^3.5.2",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^0.1.0",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-import": "^0.8.0",
+    "eslint-plugin-react": "^3.5.0"
+  }
+}
