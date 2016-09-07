@@ -2,6 +2,6 @@ import { render } from 'react-dom';
 import Component from './component';
 
 render(
-  Component.release,
+  Component.debug,
   document.getElementById('main')
 );

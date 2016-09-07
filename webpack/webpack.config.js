@@ -3,14 +3,14 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: [path.resolve(__dirname, '../src/index.js')],
+        app: [path.resolve(__dirname, '../src/index-debug.js')],
         react: ['react']
     },
     output: {
-        path: path.resolve(__dirname, '../bin/build'),
-        publicPath: 'build',
-        filename: '[name].js',
-        chunkFilename: '[name].js'
+        path: path.resolve(__dirname, '../bin/js'),
+        publicPath: 'js',
+        filename: "[name]-[chunkhash].js",
+        chunkFilename: "[name]-[chunkhash].js"
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
@@ -19,6 +19,13 @@ module.exports = {
         })
     ],
     module: {
+        preLoaders: [
+            {
+                test: /\.(jsx?|es6)$/,
+                loader: 'eslint-loader',
+                exclude: /node_modules/
+            }
+        ],
         loaders: [
             {
                 test: /\.(jsx?|es6)$/,
@@ -28,6 +35,9 @@ module.exports = {
                     presets: ['es2015', 'react', 'stage-0'],
                     plugins: ['babel-plugin-transform-decorators-legacy']
                 }
+            }, {
+                test: /\.s(a|c)ss$/,
+                loader: 'style!css!sass'
             }
         ]
     }

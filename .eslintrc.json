@@ -1,0 +1,70 @@
+{
+  "plugins": [
+    "import",
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/core-modules": [
+      "react-router",
+      "redux"
+    ]
+  },
+  "rules": {
+    "array-bracket-spacing": [2, "always", {
+      "singleValue": false,
+      "objectsInArrays": false,
+      "arraysInArrays": false
+    }],
+    "arrow-spacing": [2, {
+      "before": true,
+      "after": true
+    }],
+    "block-spacing": 2,
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "comma-dangle": 0,
+    "comma-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
+    "comma-style": [2, "last"],
+    "eol-last": 2,
+    "import/imports-first": 2,
+    "import/default": 0,
+    "import/named": 1,
+    "import/newline-after-import": 2,
+    "import/no-amd": 1,
+    "import/no-commonjs": 1,
+    "import/no-nodejs-modules": 0,
+    "import/no-unresolved": 2,
+    "key-spacing": [2, {
+      "beforeColon": false,
+      "afterColon": true
+    }],
+    "keyword-spacing": 2,
+    "indent": [2, 2],
+    "linebreak-style": [2, "unix"],
+    "no-extra-semi": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-unreachable": 1,
+    "no-unused-expressions": 1,
+    "no-unused-vars": 1,
+    "no-var": 2,
+    "operator-linebreak": [2, "after"],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/react-in-jsx-scope": 2,
+    "semi": 2,
+    "space-before-blocks": 2
+  }
+}

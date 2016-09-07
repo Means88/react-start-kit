@@ -41,3 +41,5 @@ jspm_packages
 .eslintcache
 .iml
 bin/build
+bin/js
+bin/index.html
